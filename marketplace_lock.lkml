@@ -7,7 +7,7 @@ marketplace_ref: {
   listing: "github-v2"
   version: "2.0.3"
   models: ["block-github-v2"]
-  override_constant: CONNECTION_NAME { value:"github-connection" }
-  override_constant: GITHUB_SCHEMA { value:"source_github" }
-  override_constant: COMPANY_DOMAIN { value:"highspew" }
+  override_constant: CONNECTION_NAME { value:"staccatodw" }
+  override_constant: GITHUB_SCHEMA { value:"staccato_github" }
+  override_constant: COMPANY_DOMAIN { value:"staccato2011.com" }
 }
