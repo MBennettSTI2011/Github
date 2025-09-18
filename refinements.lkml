@@ -1,6 +1,7 @@
 include: "//github-v2/**/*.view.lkml"
 include: "//github-v2/**/*.explore.lkml"
 include: "//github-v2/**/*.model.lkml"
+include: "refinements/**/*.lkml"
 
 view: +github__pull_requests {
   dimension_group: created {
