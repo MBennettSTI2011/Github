@@ -85,7 +85,7 @@ view: github_issue_base {
 
   dimension_group: created {
     type: time
-    timeframes: [date, week, month, year]
+    timeframes: [raw, date, week, month, year]
     sql: ${TABLE}.created_at ;;
     label: "Created"
     group_label: "Timeline"
@@ -93,7 +93,7 @@ view: github_issue_base {
 
   dimension_group: updated {
     type: time
-    timeframes: [date, week, month, year]
+    timeframes: [raw, date, week, month, year]
     sql: ${TABLE}.updated_at ;;
     label: "Updated"
     group_label: "Timeline"
@@ -101,7 +101,7 @@ view: github_issue_base {
 
   dimension_group: closed {
     type: time
-    timeframes: [date, week, month, year]
+    timeframes: [raw, date, week, month, year]
     sql: ${TABLE}.closed_at ;;
     label: "Closed"
     description: "Timestamp when the issue was closed."
