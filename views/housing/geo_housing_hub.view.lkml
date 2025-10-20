@@ -11,10 +11,10 @@ view: geo_housing_hub {
       GROUP BY r.owner_login, r.owner_type ;;
     sql_trigger_value: SELECT CONVERT(VARCHAR(19), GETDATE(), 120) ;;
   }
-  primary_key: owner_login
 
   dimension: owner_login {
     type: string
+    primary_key: yes
     sql: ${TABLE}.owner_login ;;
     label: "Owner Login"
     group_label: "Identifiers"
