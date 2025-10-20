@@ -1,10 +1,10 @@
 view: github_issue_base {
   extension: required
   sql_table_name: staccato_github.issues ;;
-  primary_key: issue_id
 
   dimension: issue_id {
     type: number
+    primary_key: yes
     sql: ${TABLE}.id ;;
     label: "Issue ID"
     group_label: "Identifiers"

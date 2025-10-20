@@ -1,11 +1,11 @@
 view: github_repository_base {
   extension: required
   sql_table_name: staccato_github.repositories ;;
-  primary_key: repository_id
 
   dimension: repository_id {
     type: number
     sql: ${TABLE}.id ;;
+    primary_key: yes
     label: "Repository ID"
     group_label: "Identifiers"
   }

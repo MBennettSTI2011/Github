@@ -3,7 +3,7 @@ include: "//github-v2/**/*.explore.lkml"
 include: "//github-v2/**/*.model.lkml"
 include: "refinements/**/*.lkml"
 
-view: +github__pull_requests {
+view: github__pull_request_base {
   dimension_group: created {
     label: "Created Date"
     group_label: "Dates"
@@ -91,7 +91,7 @@ view: +github__pull_requests {
   }
 }
 
-view: +github__issues {
+view: github_issue_base {
   dimension_group: created {
     label: "Created Date"
     group_label: "Dates"

@@ -1,10 +1,10 @@
 view: github_pull_request_base {
   extension: required
   sql_table_name: staccato_github.pull_requests ;;
-  primary_key: pull_request_id
 
   dimension: pull_request_id {
     type: number
+    primary_key: yes
     sql: ${TABLE}.id ;;
     label: "Pull Request ID"
     group_label: "Identifiers"
