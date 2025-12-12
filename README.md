@@ -28,7 +28,7 @@
 ### `github_issue_housing_hub`
 - **Business focus:** Issue backlog health, closure performance, and owner-level aggregation.
 - **Technical notes:**
-  - Base view: `github_issue_base` with lifecycle and performance refinements from `github_issue_base` and `github_issue_housing_hub` overlays.
+  - Base view: `github_issue_base` with refinements applied from the `github_issue_base` refinement and `github_issue_housing_hub` overlay.
   - Joins: `github_repository_housing_hub` (many_to_one, left_outer) for repository linkage; `geo_housing_hub` (many_to_one, left_outer) for owner geography.
   - Sets: `issue_performance` grouping counts, closure timing, and repository owner metadata.
 
